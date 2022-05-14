@@ -18,6 +18,25 @@ body{
     --neutral-white: hsl(0, 0%, 100%);
     --button: linear-gradient( to right, var(--primary-lime-green), var(--primary-bright-cyan));
 }
+
+h2{
+    font-size: 1.4rem;
+    color: var(--primary-dark-blue);
+    font-weight: 500;
+}
+
+h3{
+    font-size: 1.2rem;
+    color: var(--primary-dark-blue);
+    font-weight: 400;
+}
+
+p{
+    font-size: 0.8rem;
+    color: var(--neutral-grayish-blue);
+}
+
+
 /* NAV STYLING */
 header{
     position: relative;
@@ -58,14 +77,18 @@ a{
     font-size: 0.8rem;
 }
 
+li{
+    list-style: none;
+}
 /*****************END OF NAV BAR ****************/
 
 
 /******************HOME STYLING ****************/
 main{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 30% 70%;
     height: 250px;
+    width: 100vw;
     margin-right: 0;
     padding: 0 0 150px 4rem;
     margin-bottom: 100px;
@@ -73,7 +96,7 @@ main{
 }
 
 main .home{
-    padding-top:20%;
+    padding-top:30%;
 }
 
 .home h1{
@@ -98,15 +121,15 @@ button{
 
 .home-image{
     position: relative;
+  
 }
 
 .home-image > div:nth-child(1){
     position: absolute;
-    top: -200px;
-    right: -170px;
-    overflow-y: hidden;
+    top: -150px;
+    right: -50px;
     height: 100vh;
-    width: 70vw;
+    max-width:1000px ;
   
 }
 
@@ -114,7 +137,7 @@ button{
     position: absolute;
     z-index: 2;
     top:-50px;
-    right: -50px;
+    right: 30px;
     height: 500px;
     width: 400px;
 }
@@ -122,4 +145,167 @@ button{
 .home-image > div img{
     width: 100%;
     height: 100%;
+}
+
+/****************END OG HOME***************/
+
+/****************WHY CHOOSE US***********/
+
+.why-choose-us{
+    padding: 0 4rem;
+    background-color: var(--neutral-light-grayish-blue);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-top: -100px;
+}
+
+.section-title{
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+.section-title h2{
+    margin-bottom: 15px;
+}
+
+.section-title p{
+    line-height: 20px;
+}
+
+.bank-value{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.bank-value h3{
+    margin: 10px 0;
+}
+
+.bank-value p{
+    line-height: 1.2rem;
+}
+
+/*************END OF WHY CHOOSE US************/
+
+/***********START OF LATEST ARTICLE**********/
+
+.article-section{
+    padding: 4rem 4rem;
+    margin-bottom: 50px;
+    background-color: var(--neutral-very-light-gray);
+}
+
+.article-con{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+article{
+    background-color: var(--neutral-white);
+}
+
+.article-image{
+    max-height: 50%;
+    margin-bottom: 30px;
+}
+
+.article-image img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.article-section h2{
+    margin-bottom: 30px;
+}
+
+article > div + div{
+    padding: 0.2rem 1rem;
+}
+
+.article-details span{
+    font-size: 0.6rem;
+    margin-bottom: 30px;
+    color: var(--neutral-grayish-blue);
+}
+
+.article-details h3{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 1.3rem;
+    font-size: 1rem;
+}
+
+.article-details p{
+    line-height: 1.2rem;
+}
+
+
+/*************END OF LATEST ARTICLES**************/
+
+/************START OF FOOTER*****************/
+
+footer{
+    padding: 4rem;
+    background-color: var(--primary-dark-blue);
+    color: var(--neutral-very-light-gray);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    margin-top: -50px;
+
+}
+
+
+
+.nav li{
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+footer  div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+footer > div:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+footer > div:last-child span{
+    font-size: 0.7rem;
+    color: var(--neutral-grayish-blue);
+}
+
+.attribution{
+    background-color:rgb(27, 27, 51);
+    text-align: center;
+    color: var(--neutral-grayish-blue);
+    padding:10px;
+    font-size: 0.7rem;
+    height: 20px;
+}
+
+.attribution a{
+    color: var(--neutral-grayish-blue);
 }
