@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | Easybank landing page</title>
 
@@ -13,33 +20,49 @@
 
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Blog</li>
-            <li>Careers</li>
-        </ul>
+  <header>
+      <nav>
+          <div>
+            <img src="images/logo.svg" alt="logo">
+          </div>
 
-        <div>
-            <a href="#">  Request Invite</a>
-        </div>
-    </nav>
-</header>
- 
+          <ul>
+              <li><a href='#'>Home</a></li>
+              <li><a href='#'>About</a></li>
+              <li><a href='#'>Contact</a></li>
+              <li><a href='#'>Blog</a></li>
+              <li><a href='#'>Careers</a></li>
+          </ul>
 
+          <div class="invite-button">
+              <a href="#">  Request Invite</a>
+          </div>
+      </nav>
+  </header>
 
+  <main>
+    <div class="home">
+    
+      <h1>  Next generation digital banking
+        </h1>
+     
+      
+      <p>
+        Take your financial life online. Your Easybank account will be a one-stop-shop 
+        for spending, saving, budgeting, investing, and much more.</p>
+      <button class="invite-button">  Request Invite</button>
+    </div>
 
-
-
-  Next generation digital banking
-
-  Take your financial life online. Your Easybank account will be a one-stop-shop 
-  for spending, saving, budgeting, investing, and much more.
-
-  Request Invite
+    <div class="home-image">
+      <div>
+        <img src="images/bg-intro-desktop.svg" alt="intro-desktop">
+      </div>
+      
+      <div>
+        <img src="images/image-mockups.png" alt="phone image">
+      </div>
+    </div>
+  </main>
 
 
 
