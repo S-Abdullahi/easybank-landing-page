@@ -61,13 +61,18 @@ nav ul{
 
 nav li a{
     color: var(--neutral-grayish-blue);
+    cursor: pointer;
 }
 
+nav li:hover{
+    border-bottom: solid 2px var(--primary-lime-green);
+}
 
 .invite-button{
     background-image: var(--button);
     padding: 0.5rem 1rem;
     border-radius: 1.5rem;
+    cursor: pointer;
 }
 
 
@@ -238,6 +243,15 @@ article > div + div{
     margin-bottom: 10px;
     line-height: 1.3rem;
     font-size: 1rem;
+    cursor: pointer;
+}
+
+.article-details a{
+    color: var(--primary-dark-blue);
+}
+
+.article-details a:hover{
+    color: var(--primary-lime-green);
 }
 
 .article-details p{
@@ -266,6 +280,10 @@ footer{
     font-size: 0.8rem;
 }
 
+.nav a:hover{
+    color: var(--primary-lime-green);
+}
+
 footer  div:nth-child(1){
     display: flex;
     flex-direction: column;
@@ -283,6 +301,10 @@ footer  div:nth-child(1){
     gap: 10px;
     justify-content: flex-start;
     padding: 0;
+}
+
+.social-media a:hover{
+    color: var(--primary-lime-green);
 }
 
 footer > div:last-child{
@@ -308,4 +330,57 @@ footer > div:last-child span{
 
 .attribution a{
     color: var(--neutral-grayish-blue);
+}
+
+/******************MEDIA QUERIES****************/
+
+@media (max-width:767px){
+
+    
+    main p{
+    width: 200px;
+    padding-bottom: 20px;
+    color: var(--neutral-grayish-blue);
+    line-height: 1.5rem;
+    text-align: left;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .home{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .home-image{
+        display: none;
+    }
+
+    .section-title{
+        text-align: center;
+        width: 100%;
+    }
+
+    .bank-value > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bank-value p{
+        text-align: center;
+    }
+
+    .article-con, .bank-value{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article, .bank-value > div{
+        margin-bottom: 30px;
+    }
 }
