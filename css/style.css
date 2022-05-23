@@ -42,6 +42,7 @@ header{
     position: relative;
     z-index: 3;
     padding-right: 0;
+    background-color: red;
 }
 
 nav{
@@ -55,10 +56,15 @@ nav{
 
 nav ul{
     display: flex;
-    gap: 3rem;
+    justify-content: space-between;
+    /* gap: 3rem; */
     list-style: none;
+    width: 40vw;
 }
 
+nav ul li{
+    margin-right: 20px;
+}
 nav li a{
     color: var(--neutral-grayish-blue);
     cursor: pointer;
@@ -68,9 +74,14 @@ nav li:hover{
     border-bottom: solid 2px var(--primary-lime-green);
 }
 
+.mobile-menu{
+    display: none;
+}
+
 .menu-icon{
     display: none;
 }
+
 .invite-button{
     background-image: var(--button);
     padding: 0.5rem 1rem;
@@ -116,7 +127,7 @@ main .home{
 }
 
 main p{
-    width: 390px;
+    width: 30vw;
     padding-bottom: 20px;
     color: var(--neutral-grayish-blue);
     line-height: 1.5rem;
@@ -132,22 +143,20 @@ button{
 
 .home-image{
     position: relative;
-  
 }
 
 .home-image > div:nth-child(1){
     position: absolute;
     top: -150px;
     right: -50px;
-    height: 100vh;
-    max-width:1000px ;
-  
+    height: 70vh;
+    width:70vw ;
 }
 
 .home-image > div:nth-child(2){
     position: absolute;
     z-index: 2;
-    top:-50px;
+    top:50px;
     right: 30px;
     height: 500px;
     width: 400px;
@@ -359,6 +368,10 @@ footer > div:last-child span{
         display: none;
     }
 
+    .mobile-menu{
+        display: block;
+    }
+
     header > div{
         display: flex;
         flex-direction: column;
@@ -421,9 +434,9 @@ footer > div:last-child span{
     }
 
     main p{
-    max-width: 500px;
+    max-width: 70vw;
     width: 100%;
-    padding: 20px 1rem 20px 1rem;
+    padding: 20px 1rem;
     color: var(--neutral-grayish-blue);
     line-height: 1.5rem;
     text-align: center;
@@ -453,8 +466,10 @@ footer > div:last-child span{
 
     .mobile-image .mobile > div:nth-child(2){
         max-width: 400px;
-        align-self: center;
+        /* align-self: center; */
         position: absolute;
+        left: 50%;
+        margin-left: -200px;
         top: -80px;
         z-index: 2;
     }
